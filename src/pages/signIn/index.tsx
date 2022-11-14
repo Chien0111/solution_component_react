@@ -19,6 +19,7 @@ const SignIn = () => {
   });
   const handleLogin = (formValues: any) => {
     // dispatch(loginRequest(formValues));
+    window.location.href = "/home";
   };
   return (
     <>
