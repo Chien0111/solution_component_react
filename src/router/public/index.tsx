@@ -4,11 +4,12 @@ import AuthLayout from "../../layout/Auth";
 import BaseLayout from "../../layout/base";
 import Home from "../../pages/Home";
 import ManageAccount from "../../pages/ManageAccount/Account";
-const SignIn = lazy(() => import("../../pages/SignIn"));
+import ReprotContainer from "../../pages/ManageReport";
+import SignIn from "../../pages/SignIn";
 
 export const Pulicrouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/sinIn",
     element: (
       <AuthLayout>
         <SignIn />
@@ -16,7 +17,7 @@ export const Pulicrouter = createBrowserRouter([
     ),
   },
   {
-    path: "/home",
+    path: "/",
     element: (
       <BaseLayout>
         <Home />
@@ -28,6 +29,14 @@ export const Pulicrouter = createBrowserRouter([
     element: (
       <BaseLayout>
         <ManageAccount />
+      </BaseLayout>
+    ),
+  },
+  {
+    path: "/report-test",
+    element: (
+      <BaseLayout>
+        <ReprotContainer />
       </BaseLayout>
     ),
   },

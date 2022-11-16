@@ -1,7 +1,7 @@
 export const breadcumbRoute: Array<any> = [
   {
     href: "/report-test",
-    title: "Danh sách khóa học",
+    title: "Báo cáo kiểm tra",
   },
   {
     href: "/history",
