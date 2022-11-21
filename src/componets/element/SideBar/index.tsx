@@ -190,17 +190,6 @@ const Sidebar = () => {
                             Quản lý tài khoản
                           </Disclosure.Panel>
                         </Link>
-                        <Link to={"/manage-account/task"}>
-                          <Disclosure.Panel
-                            className={`py-4 pl-[64px] hover:bg-[#1B2B65] ${
-                              routeActive == "/manage-account/task"
-                                ? "bg-[#1b2b65]"
-                                : ""
-                            }`}
-                          >
-                            Quản lý nhiệm vụ
-                          </Disclosure.Panel>
-                        </Link>
                       </>
                     )}
                   </Disclosure>
