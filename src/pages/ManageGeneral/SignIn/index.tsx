@@ -2,7 +2,7 @@
 import { Button, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 // import { loginRequest } from "api";
-import Logo from "../../assets/logo.png";
+import Logo from "../../../assets/logo.png";
 
 const SignIn = () => {
   // const dispatch = useDispatch();
