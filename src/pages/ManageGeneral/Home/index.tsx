@@ -1,5 +1,5 @@
 import { RingProgress, Text } from "@mantine/core";
-import CardLineChart from "../../componets/element/CardLineChart";
+import CardLineChart from "../../../componets/element/CardLineChart";
 
 const Home = () => {
   return (

@@ -2,18 +2,17 @@ import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AuthLayout from "../../layout/Auth";
 import BaseLayout from "../../layout/base";
-// import Home from "../../pages/Home";
-
 import ManageAccount from "../../pages/ManageAccount/Account";
+import Home from "../../pages/ManageGeneral/Home";
+import SignIn from "../../pages/ManageGeneral/SignIn";
 import ReprotContainer from "../../pages/ManageReport";
-// import SignIn from "../../pages/SignIn";
 
 export const Pulicrouter = createBrowserRouter([
   {
     path: "/sinIn",
     element: (
       <AuthLayout>
-        <ManageAccount />
+        <SignIn />
       </AuthLayout>
     ),
   },
@@ -21,7 +20,7 @@ export const Pulicrouter = createBrowserRouter([
     path: "/",
     element: (
       <BaseLayout>
-        <ManageAccount />
+        <Home />
       </BaseLayout>
     ),
   },
@@ -45,7 +44,7 @@ export const Pulicrouter = createBrowserRouter([
     path: "*",
     element: (
       <BaseLayout>
-        <ManageAccount />
+        <Home />
       </BaseLayout>
     ),
   },
