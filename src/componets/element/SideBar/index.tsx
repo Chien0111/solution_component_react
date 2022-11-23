@@ -122,24 +122,6 @@ const Sidebar = () => {
                   Báo cáo kiểm tra
                 </Link>
               </li>
-              <li
-                className={`items-center w-full hover:bg-[#1B2B65] ${
-                  routeActive == "/history" ? "bg-[#1b2b65]" : ""
-                }`}
-              >
-                <Link
-                  to="/history"
-                  className={`text-xs text-white py-[6px] leading-5 flex items-center w-full`}
-                >
-                  <MessageEdit
-                    size="24"
-                    className="m-[10px] ml-8"
-                    color="currentColor"
-                    variant={routeActive == "/history" ? "Bold" : "Linear"}
-                  />
-                  Lịch sử làm bài
-                </Link>
-              </li>
             </ul>
             {/* Heading */}
             <p className="md:min-w-full text-ct-blue-300 text-xs uppercase block py-2 mx-[30px] no-underline">
