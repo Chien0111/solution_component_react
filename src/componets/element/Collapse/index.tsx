@@ -10,7 +10,7 @@ type CollapseProps = {
   namelink?: string;
   style?: string;
   opened?: boolean;
-  icon?: string;
+  icon?: any;
   arrow?: boolean;
   styleTitle?: string;
 };
@@ -38,8 +38,8 @@ const Collapse = ({
         }}
       >
         <div className="flex items-center">
-          <Image src={icon} className="mr-4" />{" "}
-          <p className={`bodytext-14px-semibold ${styleTitle}`}>{title}</p>{" "}
+          {icon ? icon : ""}
+          <div className={`w-full ${styleTitle} text-left`}>{title}</div>{" "}
           <span className="ml-2 text-ct-secondary cursor-pointer">
             <a href={`${link}`} target="_blank">
               {namelink}
